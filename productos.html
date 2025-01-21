@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Fondo negro */
+            color: #fff; /* Texto blanco para mejor contraste */
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            animation: fadeIn 1s forwards; /* Animación de desvanecimiento */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        header {
+            background-color: #73ff00;
+            color: rgb(0, 0, 0);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        nav {
+            background-color: #73ff00;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            transition: background-color 0.3s, color 0.3s;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #000000;
+            color: #fff;
+        }
+        .container {
+            padding: 20px;
+        }
+        .products ul {
+            list-style: none;
+            padding: 0;
+        }
+        .products li {
+            background-color: #000000;
+            margin: 10px 0;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+        .products li::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #73ff00; /* Línea verde */
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .products li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        section {
+            padding: 40px 20px;
+            margin: 20px 0;
+            background-color: #000000;
+            box-shadow: 0 4px 8px #73ff00;
+            color: white;
+            border-radius: 8px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #73ff00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Catálogo</h1>
+    </header>
+    <img src="img.jpg" alt="imagen inicio" width="100%" height="auto">
+    <nav>
+        <a href="../web.html">Inicio</a>
+        <a href=" https://wa.me/573102330897?text=I'm%20interested%20in%20your%20car%20for%20sale" target="_blank">whatsapp</a>
+    </nav>
+    <div class="container">
+        <h2>Productos</h2>
+        <div class="products">
+            <ul>
+                <li>Cera Ossion - $10.00</li>
+                <li>Cera Hair Waz - $20.00</li>
+                <li>Cera Morfose - $30.00</li>
+                <li>Cera Mr Buffel- $40.00</li>
+                <li>Producto 5 - $50.00</li>
+            </ul>
+        </div>
+        </div>
+        <section id="ubicacion" class="ubicacion">
+            <h2 class="animated-text">Ubicación</h2>
+            <p class="animated-text">Puedes encontrarnos en la calle 156c #98-08.</p>
+        </section>
+    <h1>hola</h1>
+        <footer>
+
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+            <a href="https://www.tiktok.com/search?q=barber%20shop%20mr%20warrior&t=1737418091214" target="_blank">TikTok</a> |
+        </div>
+    </footer>
+</body>
+</html>

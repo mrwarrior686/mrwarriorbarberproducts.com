@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Warrior Barber Products</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rye&display=swap');
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #333;
+        }
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 40px 0; /* Aumenta el padding para hacer más grande el recuadro */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 3.5rem; /* Aumenta el tamaño de la fuente */
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #73ff00;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            display: block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #000000;
+            color: #fff;
+        }
+        section {
+            padding: 40px 20px;
+            margin: 20px 0;
+            background-color: #000000;
+            box-shadow: 0 4px 8px #73ff00;
+            color: white;
+            border-radius: 8px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .productos img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .productos img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #73ff00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .animated-text {
+            opacity: 0;
+            animation: fadeInText 1s forwards;
+        }
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mr Warrior Barber Products</h1>
+        <img src="img.jpg" alt="Imagen de la barbería" width="100%" height="auto">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="web.html">Inicio</a></li>
+            <li><a href="sub paginas/productos.html">Productos</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="https://wa.me/573102330897?text=I'm%20interested%20in%20your%20car%20for%20sale" target="_blank">WhatsApp</a></li>
+        </ul>
+    </nav>
+    <section id="inicio" class="inicio">
+        <h2 class="animated-text">Bienvenido a nuestra distribuidora</h2>
+        <p class="animated-text">Descubre nuestros productos exclusivos para el cuidado de tu cabello y barba al detal y al por mayor.</p>
+    </section>
+    <section id="productos" class="productos">
+        <h2 class="animated-text">Productos</h2>
+        <p class="animated-text">Descubre nuestra gama de productos exclusivos para el cuidado de tu cabello y barba.</p>
+    </section>
+    <section id="ubicacion" class="ubicacion">
+        <h2 class="animated-text">Ubicación</h2>
+        <p class="animated-text">Puedes encontrarnos en la calle 156c #98-08.</p>
+    </section>
+    <footer>
+        <div>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+            <a href="https://www.tiktok.com/search?q=barber%20shop%20mr%20warrior&t=1737418091214" target="_blank">TikTok</a>
+        </div>
+    </footer>
+</body>
+</html>
